@@ -11,7 +11,7 @@ function getInputValueId(inputId){
 /* 
     Get Result List ul inerst li tag
 */ 
-function getResutlList(elementId, totalCalculation, number){    
+function getResutlList(elementId, totalCalculation){    
     const getTitle = document.getElementById(elementId).innerText;
     const resultList = document.getElementById('result-list');
     const createList = document.createElement('li');
