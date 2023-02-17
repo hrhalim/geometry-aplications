@@ -1,9 +1,14 @@
-// Event for Triangle
-document.getElementById('btn-triangle').addEventListener('click', function(){
-   const inputBase = getInputValueId('input-base');
-   const inputHeight = getInputValueId('input-height');
-   const TotalTriangle = (0.5 * inputBase * inputHeight).toFixed(2);  
-   getResutlList('triangle-title', TotalTriangle);
+// Event for Triangle 
+document.getElementById('btn-triangle').addEventListener('click', function(){  
+    const inputBase = getInputValueId('input-base');
+    const inputHeight = getInputValueId('input-height');
+   if(typeof inputBase !== 'number' || typeof inputHeight !== 'number' || inputBase == "" || inputHeight == ""){  
+     return alert('Please Provide Valid Number');
+   }else {
+    const TotalTriangle = (0.5 * inputBase * inputHeight).toFixed(2);  
+    getResutlList('triangle-title', TotalTriangle);
+   }
+   
 
 });
 
@@ -53,3 +58,8 @@ document.getElementById('btn-ellipse').addEventListener('click', function(){
 
  });
 
+
+ // Event For Blog Button
+ document.getElementById('btn-blog').addEventListener('click', function(){
+    window.location.href = "blog.html";
+ });

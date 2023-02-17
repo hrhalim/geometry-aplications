@@ -55,7 +55,7 @@ ul {
 .geometry-right li {
     display: grid;
     padding: 0;
-    grid-template-columns: 15px 1fr 1fr auto;
+    grid-template-columns: 1px 1fr 1fr auto;
     gap: 10px;
     margin-bottom: 10px;
 }
@@ -70,3 +70,4 @@ ul {
     padding: 5px 10px;
     border-radius: 8px;
 }
+
