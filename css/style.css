@@ -1,3 +1,8 @@
+
+/*  
+ Stat CSS  Style 
+*/
+
 h2 {
     font-weight: 700;
     font-size: 25px;
@@ -15,7 +20,7 @@ img {
 }
 body {
     font-family: 'Inter', sans-serif;
-    padding: 50px;
+    padding: 40px;
 }
 .geometry-left {
     display: grid;

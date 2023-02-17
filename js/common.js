@@ -1,13 +1,16 @@
 
-//Get Input field of and id
+/* 
+    Get Input field of and id
+*/ 
 function getInputValueId(inputId){
     const getInputId = document.getElementById(inputId).value;  
     const getInputIdString = parseFloat(getInputId);
     return getInputIdString;
 }
 
-
-//Get Result List ul inerst li tag 
+/* 
+    Get Result List ul inerst li tag
+*/ 
 function getResutlList(elementId, totalCalculation, number){    
     const getTitle = document.getElementById(elementId).innerText;
     const resultList = document.getElementById('result-list');

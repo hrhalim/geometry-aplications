@@ -1,4 +1,8 @@
-// Event for Triangle 
+
+
+/* 
+    Event for Triangle button
+*/ 
 document.getElementById('btn-triangle').addEventListener('click', function(){  
     const inputBase = getInputValueId('input-base');
     const inputHeight = getInputValueId('input-height');
@@ -9,11 +13,11 @@ document.getElementById('btn-triangle').addEventListener('click', function(){
     getResutlList('triangle-title', TotalTriangle);
    }
    
-
 });
 
-
-// Event for Rectangle
+/* 
+     Event for Rectangle button
+*/ 
 document.getElementById('btn-rectangle').addEventListener('click', function(){
     const inputwidth = getInputValueId('input-width');
    const inputLength = getInputValueId('input-length');
@@ -22,7 +26,9 @@ document.getElementById('btn-rectangle').addEventListener('click', function(){
  
  });
 
-//  Event for Parallelogram
+/* 
+    Event for Parallelogram button
+*/ 
 document.getElementById('btn-parallelogram').addEventListener('click', function(){
     const parallelogramBase = getInputValueId('parallelogram-base');
     const parallelogramHeigh = getInputValueId('parallelogram-height');
@@ -31,7 +37,10 @@ document.getElementById('btn-parallelogram').addEventListener('click', function(
 
  });
 
-// Event for Rhombus
+
+/* 
+    Event for Rhombus button
+*/ 
 document.getElementById('btn-rhombus').addEventListener('click', function(){
     const inputDiagonalOne =  getInputValueId('input-diagonal-one');
     const inputDiagonalTwo =  getInputValueId('input-diagonal-two');
@@ -40,7 +49,9 @@ document.getElementById('btn-rhombus').addEventListener('click', function(){
 
  });
 
-// Event for Pentagon
+/* 
+    Event for Pentagon button
+*/ 
 document.getElementById('btn-pentagon').addEventListener('click', function(){
     const inputPentagonOne =  getInputValueId('input-pentagon-one');
     const inputPentagonTwo =  getInputValueId('input-pentagon-two');
@@ -49,7 +60,10 @@ document.getElementById('btn-pentagon').addEventListener('click', function(){
 
  });
 
-// Event for Ellipse
+
+ /* 
+    Event for Ellipse button
+*/ 
 document.getElementById('btn-ellipse').addEventListener('click', function(){
     const inputEllipseOne =  getInputValueId('input-ellipse-one');
     const inputEllipseTwo =  getInputValueId('input-ellipse-two');
@@ -59,7 +73,33 @@ document.getElementById('btn-ellipse').addEventListener('click', function(){
  });
 
 
- // Event For Blog Button
+/*
+    Event For Blog Button button
+
+*/  
  document.getElementById('btn-blog').addEventListener('click', function(){
     window.location.href = "blog.html";
  });
+
+ /*
+    Background color randomly
+ */ 
+ function randomColor() {
+    let color = [];
+    for (let i = 0; i < 3; i++) {
+      color.push(Math.floor(Math.random() * 256));
+    }
+    const colorRgba = 'rgb(' + color.join(', ') + ')';  
+    return colorRgba; 
+  } 
+ 
+  
+  const getitem = document.querySelectorAll('.geometry-item');
+  for (let item of getitem) {
+    item.addEventListener('mouseenter', function(){
+        const randColor = randomColor();
+        item.style.backgroundColor = randColor;
+    });
+    
+  }
+  
