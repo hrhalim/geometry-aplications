@@ -1,0 +1,72 @@
+h2 {
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 1.2; 
+    color: #414141;
+}
+h3 {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center; 
+}
+img {
+    max-width: 100%;
+}
+body {
+    font-family: 'Inter', sans-serif;
+    padding: 50px;
+}
+.geometry-left {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+.geometry-item {
+    padding: 40px;
+}
+.geometry-right h2 {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 30px;  
+    text-decoration-line: underline;
+    padding-bottom: 10px;
+}
+
+button {
+    background-color: #1090D8 !important; 
+    color: #fff !important;
+}
+.geometry-right ul {
+    display: flex;
+    padding: 0; 
+}
+.geometry-right li { 
+    list-style: none;
+}
+.geometry-right button {
+    border: 0;
+    padding: 2px 12px 8px;
+    border-radius: 8px;
+}
+.calculation-item li span {
+    font-size: 14px;
+    color: #414141;
+}
+.geometry-right ul {
+    display: grid;
+    padding: 0;
+    grid-template-columns: 15px 1fr 1fr auto;
+    gap: 10px;
+}
+.calculation-item {
+    padding: 20px;
+}
+.btn-convert {
+    background-color: #1090D8 !important;
+    color: #fff !important;
+    font-size: 14px !important;
+    display: inline-block;
+    padding: 5px 10px;
+    border-radius: 8px;
+}

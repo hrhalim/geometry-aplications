@@ -5,6 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Geometry Genius</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
@@ -20,7 +23,7 @@
             </div>
             <div class="col-lg-6 col-md-6 col-sm">
                 <div class="header-btn text-end">
-                    <button class="btn btn-primary px-4 py-2">Blog</button>
+                    <button class="btn  px-4 py-2">Blog</button>
                 </div>
             </div>
         </div>
@@ -28,8 +31,91 @@
  </header>
  <!-- Header area end -->
 
+ <main>
+    <!-- Geometry area start -->
+    <section class="geometry-area pt-5">
+        <div class="container-fulid">
+            <div class="row"> 
+                <div class="col-lg-9 col-md-9 col-sm">
+                    <div class="geometry-left">
+                        <div class="geometry-item border border-1 text-center rounded-3">
+                            <img class="pb-5" src="images/triangle.png" alt="Image">
+                            <h2>Triangle</h2>
+                            <h3>Area (A) = 0.5 * b * h</h3>
+                            <div class="geometry-input-wrapper d-flex pb-5 pt-2 gap-2">
+                                <input id="input-base" class="w-100" type="text" placeholder="b"> cm <input id="input-height" class="w-100" type="text" placeholder="h"> cm
+                            </div>
+                            <button id="btn-triangle" class="btn w-100 roundad-3">Calculate</button>
+                        </div>
+                        <div class="geometry-item border border-1 text-center rounded-3">
+                            <img class="pb-5" src="images/rectangle.png" alt="Image">
+                            <h2>Rectangle</h2>
+                            <h3>Area (A) = w * I</h3>
+                            <div class="geometry-input-wrapper d-flex pb-5 pt-2 gap-2">
+                                <input class="w-100" type="text" placeholder="w"> cm <input class="w-100" type="text" placeholder="l"> cm 
+                            </div>
+                            <button class="btn w-100 roundad-3">Calculate</button>
+                        </div>
+                        <div class="geometry-item border border-1 text-center rounded-3">
+                            <img class="pb-5" src="images/parallelogram.png" alt="Image">
+                            <h2>Parallelogram</h2>
+                            <h3>Area (A) = b * h</h3>
+                            <div class="geometry-input-wrapper d-flex pb-5 pt-2 gap-2">
+                                <input class="w-100" type="text" placeholder="b"> cm <input class="w-100" type="text" placeholder="h"> cm
+                            </div>
+                            <button class="btn w-100 roundad-3">Calculate</button>
+                        </div>
+                        <div class="geometry-item border border-1 text-center rounded-3">
+                            <img class="pb-5" src="images/rhombus.png" alt="Image">
+                            <h2>Rhombus</h2>
+                            <h3>Area (A) = 0.5 * d1 * d2</h3>
+                            <div class="geometry-input-wrapper d-flex pb-5 pt-2 gap-2">
+                                <input class="w-100" type="text" placeholder="d1"> cm <input class="w-100" type="text" placeholder="d2"> cm 
+                            </div>
+                            <button class="btn  w-100 roundad-3">Calculate</button>
+                        </div>
+                        <div class="geometry-item border border-1 text-center rounded-3">
+                            <img class="pb-5" src="images/parallelogram.png" alt="Image">
+                            <h2>Pentagon</h2>
+                            <h3>Area (A) = 0.5 * p * b</h3>
+                            <div class="geometry-input-wrapper d-flex pb-5 pt-2 gap-2">
+                                <input class="w-100" type="text" placeholder="p"> cm <input class="w-100" type="text" placeholder="b"> cm
+                            </div>
+                            <button class="btn w-100 roundad-3">Calculate</button>
+                        </div> 
+                        <div class="geometry-item border border-1 text-center rounded-3">
+                            <img class="pb-5" src="images/ellipse.png" alt="Image">
+                            <h2>Ellipse</h2>
+                            <h3>Area (A) = PIab</h3>
+                            <div class="geometry-input-wrapper d-flex pb-5 pt-2 gap-2">
+                                <input class="w-100" type="text" placeholder="a"> cm <input class="w-100" type="text" placeholder="b"> cm
+                            </div>
+                            <button class="btn w-100 roundad-3">Calculate</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm">
+                    <div class="geometry-right">
+                        <div class="calculation-item border border-1 text-center rounded-3"> 
+                            <h2>Area Calculation</h2>
+                            <ul>
+                                <li><span>1.</span></li>
+                                <li><span>Ellipse</span></li>
+                                <li><span>120cm<sup>2</sup></span></li>  
+                                <li><span class="btn-convert">Covert to m<sup>2</sup></span></li>   
+                            </ul> 
+                        </div> 
+                    </div>
+                </div> 
+            </div> 
+        </div>
+    </section>
+      <!-- Geometry area end -->
+
+ </main>
+
 
     <script src="js/bootstrap.min.js"></script>
-    <script src="js/main.js"></script> 
+    <script src="js/common.js"></script> 
 </body>
 </html>
