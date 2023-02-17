@@ -70,4 +70,35 @@ ul {
     padding: 5px 10px;
     border-radius: 8px;
 }
+.geometry-img img {
+    width: auto;
+    height: 100%;
+}
+.geometry-img {
+    height: 194px;
+}
 
+/* Extra small devices (phones, 767px and down) */
+@media only screen and (max-width: 767px) {
+    .geometry-left { 
+        grid-template-columns: repeat(1, 1fr); 
+    }
+    .geometry-item {
+        padding: 20px;
+    }
+    body { 
+        padding: 20px;
+    }
+    .header-btn.text-end {
+        display: flex;
+        justify-content: center;
+        padding-top: 18px;
+    }
+    .header.logo {
+        display: flex;
+        justify-content: center;
+    }
+    .header.logo img {
+        max-width: 185px;
+    }
+}
