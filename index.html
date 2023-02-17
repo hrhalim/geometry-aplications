@@ -40,7 +40,7 @@
                     <div class="geometry-left">
                         <div class="geometry-item border border-1 text-center rounded-3">
                             <img class="pb-5" src="images/triangle.png" alt="Image">
-                            <h2>Triangle</h2>
+                            <h2 id="triangle-title">Triangle</h2>
                             <h3>Area (A) = 0.5 * b * h</h3>
                             <div class="geometry-input-wrapper d-flex pb-5 pt-2 gap-2">
                                 <input id="input-base" class="w-100" type="text" placeholder="b"> cm <input id="input-height" class="w-100" type="text" placeholder="h"> cm
@@ -49,37 +49,37 @@
                         </div>
                         <div class="geometry-item border border-1 text-center rounded-3">
                             <img class="pb-5" src="images/rectangle.png" alt="Image">
-                            <h2>Rectangle</h2>
+                            <h2 id="rectangle-title">Rectangle</h2>
                             <h3>Area (A) = w * I</h3>
                             <div class="geometry-input-wrapper d-flex pb-5 pt-2 gap-2">
-                                <input class="w-100" type="text" placeholder="w"> cm <input class="w-100" type="text" placeholder="l"> cm 
+                                <input id="input-width" class="w-100" type="text" placeholder="w"> cm <input id="input-length" class="w-100" type="text" placeholder="l"> cm 
                             </div>
-                            <button class="btn w-100 roundad-3">Calculate</button>
+                            <button id="btn-rectangle" class="btn w-100 roundad-3">Calculate</button>
                         </div>
                         <div class="geometry-item border border-1 text-center rounded-3">
                             <img class="pb-5" src="images/parallelogram.png" alt="Image">
-                            <h2>Parallelogram</h2>
+                            <h2 id="parallelogram-title">Parallelogram</h2>
                             <h3>Area (A) = b * h</h3>
                             <div class="geometry-input-wrapper d-flex pb-5 pt-2 gap-2">
-                                <input class="w-100" type="text" placeholder="b"> cm <input class="w-100" type="text" placeholder="h"> cm
+                                <input id="parallelogram-base" class="w-100" type="text" placeholder="b"> cm <input id="parallelogram-height" class="w-100" type="text" placeholder="h"> cm
                             </div>
-                            <button class="btn w-100 roundad-3">Calculate</button>
+                            <button id="btn-paralleogram" class="btn w-100 roundad-3">Calculate</button>
                         </div>
                         <div class="geometry-item border border-1 text-center rounded-3">
                             <img class="pb-5" src="images/rhombus.png" alt="Image">
-                            <h2>Rhombus</h2>
+                            <h2 id="rhombus-title">Rhombus</h2>
                             <h3>Area (A) = 0.5 * d1 * d2</h3>
                             <div class="geometry-input-wrapper d-flex pb-5 pt-2 gap-2">
-                                <input class="w-100" type="text" placeholder="d1"> cm <input class="w-100" type="text" placeholder="d2"> cm 
+                                <input id="diagonal-one" class="w-100" type="text" placeholder="d1"> cm <input id="diagonal-two" class="w-100" type="text" placeholder="d2"> cm 
                             </div>
-                            <button class="btn  w-100 roundad-3">Calculate</button>
+                            <button id="btn-rhombus" class="w-100 roundad-3">Calculate</button>
                         </div>
                         <div class="geometry-item border border-1 text-center rounded-3">
                             <img class="pb-5" src="images/parallelogram.png" alt="Image">
-                            <h2>Pentagon</h2>
+                            <h2 id="pentagon-title">Pentagon</h2>
                             <h3>Area (A) = 0.5 * p * b</h3>
                             <div class="geometry-input-wrapper d-flex pb-5 pt-2 gap-2">
-                                <input class="w-100" type="text" placeholder="p"> cm <input class="w-100" type="text" placeholder="b"> cm
+                                <input id="input-pentagon-one" class="w-100" type="text" placeholder="p"> cm <input class="w-100" type="text" placeholder="b"> cm
                             </div>
                             <button class="btn w-100 roundad-3">Calculate</button>
                         </div> 
@@ -98,11 +98,14 @@
                     <div class="geometry-right">
                         <div class="calculation-item border border-1 text-center rounded-3"> 
                             <h2>Area Calculation</h2>
-                            <ul>
-                                <li><span>1.</span></li>
-                                <li><span>Ellipse</span></li>
-                                <li><span>120cm<sup>2</sup></span></li>  
-                                <li><span class="btn-convert">Covert to m<sup>2</sup></span></li>   
+                            <ul id="result-list">
+                                <!-- <li>
+                                    <span>1.</span>
+                                    <span>Ellipse</span>
+                                    <span>120cm<sup>2</sup></span>
+                                    <span class="btn-convert">Covert to m<sup>2</sup></span>
+                                </li>  -->
+                                 
                             </ul> 
                         </div> 
                     </div>
@@ -117,5 +120,6 @@
 
     <script src="js/bootstrap.min.js"></script>
     <script src="js/common.js"></script> 
+    <script src="js/main.js"></script> 
 </body>
 </html>

@@ -37,9 +37,8 @@ button {
     background-color: #1090D8 !important; 
     color: #fff !important;
 }
-.geometry-right ul {
-    display: flex;
-    padding: 0; 
+ul {
+    padding: 0;    
 }
 .geometry-right li { 
     list-style: none;
@@ -53,11 +52,12 @@ button {
     font-size: 14px;
     color: #414141;
 }
-.geometry-right ul {
+.geometry-right li {
     display: grid;
     padding: 0;
     grid-template-columns: 15px 1fr 1fr auto;
     gap: 10px;
+    margin-bottom: 10px;
 }
 .calculation-item {
     padding: 20px;
