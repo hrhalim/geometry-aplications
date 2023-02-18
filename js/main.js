@@ -1,5 +1,4 @@
 
-
 /* 
     Event for Triangle button
 */ 

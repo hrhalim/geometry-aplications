@@ -22,6 +22,9 @@ body {
     font-family: 'Inter', sans-serif;
     padding: 40px;
 }
+.header{
+    background: rgba(16, 144, 216, 0.1);
+}
 .geometry-left {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -70,7 +73,7 @@ ul {
 .btn-convert {
     background-color: #1090D8 !important;
     color: #fff !important;
-    font-size: 14px !important;
+    font-size: 11px !important;
     display: inline-block;
     padding: 5px 10px;
     border-radius: 8px;
@@ -81,6 +84,10 @@ ul {
 }
 .geometry-img {
     height: 194px;
+}
+.blog-wrapper {
+    width: 60%;
+    margin: 0 auto;
 }
 
 /* Extra small devices (phones, 767px and down) */
@@ -105,5 +112,9 @@ ul {
     }
     .header.logo img {
         max-width: 185px;
+    }
+    .blog-wrapper {
+        width: 100%;
+        margin: 0 auto;
     }
 }

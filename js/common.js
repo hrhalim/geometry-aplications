@@ -11,13 +11,14 @@ function getInputValueId(inputId){
 /* 
     Get Result List ul inerst li tag
 */ 
+let serial = 0;
 function getResutlList(elementId, totalCalculation){    
     const getTitle = document.getElementById(elementId).innerText;
     const resultList = document.getElementById('result-list');
     const createList = document.createElement('li');
      
     createList.innerHTML = `
-        <span>1.</span>
+        <span>${serial += 1}.</span>
         <span>${getTitle}</span>
         <span>${totalCalculation}cm<sup>2</sup></span>
         <span class="btn-convert">Covert to m<sup>2</sup></span>
