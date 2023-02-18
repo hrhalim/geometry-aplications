@@ -9,6 +9,11 @@ h2 {
     line-height: 1.2; 
     color: #414141;
 }
+.header-logo a {
+    font-size: 30px;
+    color: #000;
+    text-decoration: none;
+}
 h3 {
     font-weight: 400;
     font-size: 16px;
