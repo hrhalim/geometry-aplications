@@ -2,7 +2,7 @@
 /* 
     Event for Triangle button
 */ 
-document.getElementById('btn-triangle').addEventListener('click', function(){  
+document.getElementById('btn-triangle').addEventListener('click', function(){   
     const inputBase = getInputValueId('input-base');
     const inputHeight = getInputValueId('input-height');
    if(isNaN(inputBase)  || isNaN(inputHeight) || inputBase == "" || inputHeight == "" || inputBase < 0 || inputHeight < 0){  
@@ -14,8 +14,8 @@ document.getElementById('btn-triangle').addEventListener('click', function(){
    
 });
 
-/* 
-     Event for Rectangle button
+/*      
+  Event for Rectangle button
 */ 
 document.getElementById('btn-rectangle').addEventListener('click', function(){
     const inputwidth = getInputValueId('input-width');
@@ -50,7 +50,7 @@ document.getElementById('btn-parallelogram').addEventListener('click', function(
 */ 
 document.getElementById('btn-rhombus').addEventListener('click', function(){
     const inputDiagonalOne =  getInputValueId('input-diagonal-one');
-    const inputDiagonalTwo =  getInputValueId('input-diagonal-two');
+    const inputDiagonalTwo =  getInputValueId('input-diagonal-two'); 
     if(isNaN(inputDiagonalOne)  || isNaN(inputDiagonalTwo) || inputDiagonalOne == "" || inputDiagonalTwo == "" || inputDiagonalOne < 0 || inputDiagonalTwo < 0){  
         return alert('Please Provide Valid Number');
       }else {
@@ -82,10 +82,11 @@ document.getElementById('btn-pentagon').addEventListener('click', function(){
 document.getElementById('btn-ellipse').addEventListener('click', function(){
     const inputEllipseOne =  getInputValueId('input-ellipse-one');
     const inputEllipseTwo =  getInputValueId('input-ellipse-two');
+    const PI = 3.1416;
     if(isNaN(inputEllipseOne)  || isNaN(inputEllipseTwo) || inputEllipseOne == "" || inputEllipseTwo == "" || inputEllipseOne < 0 || inputEllipseTwo < 0){  
         return alert('Please Provide Valid Number');
       }else {
-        const totalEllipse = (3.14159265 * inputEllipseOne * inputEllipseTwo).toFixed(2);  
+        const totalEllipse = (PI * inputEllipseOne * inputEllipseTwo).toFixed(2);  
         getResutlList('ellipse-title', totalEllipse);
       } 
 
@@ -93,8 +94,7 @@ document.getElementById('btn-ellipse').addEventListener('click', function(){
 
 
 /*
-    Event For Blog Button
-
+    Event For Blog Button 
 */  
  document.getElementById('btn-blog').addEventListener('click', function(){
     window.location.href = "blog.html";
@@ -112,12 +112,25 @@ document.getElementById('btn-ellipse').addEventListener('click', function(){
     return colorRgba; 
   } 
  
-  
+  /*
+    Get All Item for mouseenter
+ */ 
   const getitem = document.querySelectorAll('.geometry-item');
   for (let item of getitem) {
     item.addEventListener('mouseenter', function(){
         const randColor = randomColor();
         item.style.backgroundColor = randColor;
+    });
+    
+  }
+
+/*
+    Get All Item for mouseleave
+ */ 
+  for (let item of getitem) {
+    item.addEventListener('mouseleave', function(){
+        const randColor = randomColor();
+        item.style.backgroundColor = "";
     });
     
   }
