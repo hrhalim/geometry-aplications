@@ -23,7 +23,7 @@ body {
     padding: 40px;
 }
 .header{
-    background: rgba(16, 144, 216, 0.1);
+    background: rgba(16, 143, 216, 0.116);
 }
 .geometry-left {
     display: grid;
@@ -73,7 +73,7 @@ ul {
 .btn-convert {
     background-color: #1090D8 !important;
     color: #fff !important;
-    font-size: 11px !important;
+    font-size: 14px !important;
     display: inline-block;
     padding: 5px 10px;
     border-radius: 8px;
@@ -98,10 +98,17 @@ ul {
     .geometry-item {
         padding: 20px;
     }
+    .header {
+        text-align: center;
+        padding: 25px 0px !important;
+    }
+    .header-logo img {
+        max-width: 185px;
+    }
     body { 
         padding: 20px;
     }
-    .header-btn.text-end {
+    .header-btn{
         display: flex;
         justify-content: center;
         padding-top: 18px;

@@ -9,7 +9,7 @@ function getInputValueId(inputId){
 }
 
 /* 
-    Get Result List ul inerst li tag
+    Get Result List Inside UL Tag
 */ 
 let serial = 0;
 function getResutlList(elementId, totalCalculation){    
